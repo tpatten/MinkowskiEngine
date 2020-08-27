@@ -8,7 +8,7 @@ Q ?= @
 # CPU_ONLY := 1
 
 CXX ?= g++
-PYTHON ?= python
+PYTHON ?= python3.7
 
 EXTENSION_NAME := minkowski
 
