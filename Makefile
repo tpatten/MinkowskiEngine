@@ -18,7 +18,8 @@ EXTENSION_NAME := minkowski
 # mkl for MKL. For conda, conda install -c intel mkl mkl-include
 # openblas for OpenBlas (default)
 BLAS ?= openblas
-CUDA_HOME ?= $(shell $(PYTHON) -c 'from torch.utils.cpp_extension import _find_cuda_home; print(_find_cuda_home())')
+#CUDA_HOME ?= $(shell $(PYTHON) -c 'from torch.utils.cpp_extension import _find_cuda_home; print(_find_cuda_home())')
+CUDA_HOME := /usr/local/cuda-10.2/
 
 # Custom (MKL/ATLAS/OpenBLAS) include and lib directories.
 # Leave commented to accept the defaults for your choice of BLAS
